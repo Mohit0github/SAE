@@ -1,0 +1,39 @@
+.about-section {
+  display: flex;
+  justify-content: space-between; /* Aligns content and SVG */
+  align-items: center; /* Centers content vertically */
+  background-color: #f7f2e9; /* Light orange background */
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 60%; /* Limits the width of the content */
+}
+
+.car-svg {
+  max-width: 30%; /* Adjust as necessary */
+  height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column; /* Stack content and SVG vertically */
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .car-svg {
+    max-width: 80%; /* Adjust size on smaller screens */
+    margin-top: 20px; /* Space between content and image */
+  }
+}
+
+.highlight {
+  color: #e25420; /* Color for the word 'Innovation' */
+}
