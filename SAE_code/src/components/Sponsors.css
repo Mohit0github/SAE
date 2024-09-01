@@ -1,0 +1,53 @@
+/* Sponsors.css */
+.sponsors-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #1b1a1b; /* Background color */
+}
+
+.sponsors-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Text color */
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center logos vertically */
+  gap: 20px; /* Space between sponsor logos */
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.sponsor-logo {
+  height: 150px; /* Increase size */
+  width: auto; /* Adjust width automatically to maintain aspect ratio */
+  max-width: 33%; /* Ensure each logo takes up no more than one-third of the container width */
+  object-fit: contain; /* Ensure logos fit within their container */
+  display: flex;
+  align-items: center; /* Center logos within flex items */
+  justify-content: center; /* Center logos horizontally */
+  padding: 2vh; /* Adjust padding as needed */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sponsor-logo {
+    height: 120px; /* Adjust size for tablets */
+    max-width: 33%; /* Maintain proportional sizing */
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsor-logo {
+    height: 100px; /* Adjust size for mobile phones */
+    max-width: 120px; /* Limit maximum width */
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsor-logo {
+    height: 80px; /* Further adjust size for very small screens */
+    max-width: 100px; /* Limit maximum width */
+  }
+}
